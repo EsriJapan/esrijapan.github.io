@@ -14,10 +14,599 @@
 
     <link rel="shortcut icon" href="img/favicon.ico">
 
+
+     <link type="text/css" rel="stylesheet" href="//fast.fonts.com/cssapi/23855eec-5fdf-4594-9898-0113a04bfef0.css"/>
+
+    <link href="css/screen.css?1403818683" rel="stylesheet" type="text/css" />
+
+        <link href="css/home.css?1403822327" rel="stylesheet" type="text/css" />
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+
+      <script src="js/libs/jquery.isotope.min.js?1403805795" type="text/javascript"></script>
+      <script src="js/libs/chosen.jquery.js?1403816593" type="text/javascript"></script>
+      <!--<script src="js/github.js?1403816593" type="text/javascript"></script>-->
+      <script src="js/getrepo.js" type="text/javascript"></script>
+
   </head>
 
   <body>
-    <h3>準備中です</h3>
+    <div id="wrapper">
+      <div id="page">
+
+        <div id="home-banner">
+  <div class="container">
+    <div class="row">
+      <div id="home-main-text">
+        <h1>Esri Japan is on GitHub!</h1>
+        <p class="large">
+          ESRIジャパンのスタッフが作成したサンプル プログラムを GitHub で共有しています。<br>ArcGIS プラットフォームを利用した GIS アプリケーションの開発に役立ててください。
+          <!--We're excited about helping developers build and share software. Browse our open source code and get started with our powerful ArcGIS platform today. -->
+        </p>
+        <p>
+          <a class="btn primary centered" href="https://github.com/esrijapan"> GitHub を開く </a>
+        </p>
+        <!--<p>
+          <a class="btn tertiary centered" href="https://geonet.esri.com/groups/dev-jp"> ArcGIS 開発者コミュニティに参加 </a>
+        </p>-->
+         <p class="home-subscription-text">
+          <a target="_brank" href="http://developers.esri.com">ArcGIS for Developers</a> 開発者アカウントを作成すれば、誰でも<a target="_brank" href="http://www.esrij.com/products/arcgis-online-for-developers/details/#devplans">無償で</a> ArcGIS 開発キットをダウンロードして開発をスタートできます。<br>開発者アカウント作成ガイド（日本語）は<a target="_brank" href="http://www.esrij.com/cgi-bin/wp/wp-content/uploads/documents/signup-esri-developers.pdf">こちら</a><!--<a href="http://developers.esri.com">ArcGIS subscription</a>? &nbsp;Start developing today for <a href="https://developers.arcgis.com/en/plans/">free</a>.-->
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="container smaller">
+  <div class="filter-container">
+    <div class="label">
+      <em class="lable-it"> 開発言語/キーワード検索: </em>
+    </div>
+    <div class="search-select">
+      <select data-placeholder="検索/選択" class="chzn-select" multiple tabindex="6">
+        <!--<optgroup label="Language">-->
+        <optgroup label="言語">
+
+            <option data-filter="JavaScript">JavaScript</option>
+            <option data-filter="DotNet">DotNet</option>
+            <option data-filter="Java">Java</option>
+            <option data-filter="Objective-C">Objective-C</option>
+            <!--<option data-filter="Python">Python</option>
+            <option data-filter="HTML">HTML</option>
+            <option data-filter="ActionScript">ActionScript</option>
+            <option data-filter="C-Sharp">C-Sharp</option>
+            <option data-filter="C-plus-plus">C++</option>
+            <option data-filter="XML">XML</option>
+            <option data-filter="Silverlight">Silverlight</option>
+            <option data-filter="WPF">WPF</option>
+            <option data-filter="JavaScript REST-API">JavaScript REST-API</option>
+            <option data-filter="C-sharp">C#</option>
+            <option data-filter="Visual-Basic">Visual-Basic</option>
+            <option data-filter="Ruby">Ruby</option>
+            <option data-filter="C">C</option>
+            <option data-filter="python">python</option>
+            <option data-filter="JavaScript Node.js">JavaScript Node.js</option>
+            <option data-filter="C-plus-plus">C-plus-plus</option>-->
+
+        </optgroup>
+        <!--<optgroup label="Tags">-->
+        <optgroup label="タグ">
+
+            <!--<option data-filter="Web">Web</option>
+            <option data-filter=".NET">.NET</option>-->
+            <!--<option data-filter="100-lines-or-less">100-lines-or-less</option>
+            <option data-filter="2">2</option>
+            <option data-filter="2013">2013</option>
+            <option data-filter="2525">2525</option>
+            <option data-filter="2525C">2525C</option>
+            <option data-filter="3D">3D</option>
+            <option data-filter="3D-Cities">3D-Cities</option>
+            <option data-filter="511">511</option>
+            <option data-filter="AGO">AGO</option>
+            <option data-filter="AGOL">AGOL</option>
+            <option data-filter="AGS">AGS</option>
+            <option data-filter="AMD">AMD</option>
+            <option data-filter="API">API</option>
+            <option data-filter="APN">APN</option>
+            <option data-filter="APNS">APNS</option>
+            <option data-filter="APP6">APP6</option>
+            <option data-filter="APP6B">APP6B</option>
+            <option data-filter="Accordion">Accordion</option>
+            <option data-filter="Adapter">Adapter</option>
+            <option data-filter="Addins">Addins</option>
+            <option data-filter="Addressing">Addressing</option>
+            <option data-filter="Analysis">Analysis</option>
+            <option data-filter="Android">Android</option>
+            <option data-filter="Angular">Angular</option>
+            <option data-filter="Animation">Animation</option>
+            <option data-filter="App">App</option>
+            <option data-filter="AppBuilder">AppBuilder</option>
+            <option data-filter="Apple">Apple</option>
+            <option data-filter="Application">Application</option>
+            <option data-filter="Applications">Applications</option>
+            <option data-filter="Apps">Apps</option>
+            <option data-filter="ArcGIS">ArcGIS</option>
+            <option data-filter="ArcGIS-Online">ArcGIS-Online</option>
+            <option data-filter="ArcGIS-Pro-SDK">ArcGIS-Pro-SDK</option>
+            <option data-filter="ArcGIS-Runtime">ArcGIS-Runtime</option>
+            <option data-filter="ArcGIS-Runtime-SDK">ArcGIS-Runtime-SDK</option>
+            <option data-filter="ArcGIS-Runtime-SDK-for-">ArcGIS-Runtime-SDK-for-</option>
+            <option data-filter="ArcGISOnline">ArcGISOnline</option>
+            <option data-filter="ArcGISSolutions">ArcGISSolutions</option>
+            <option data-filter="ArcLogistics">ArcLogistics</option>
+            <option data-filter="ArcMap">ArcMap</option>
+            <option data-filter="ArcScene">ArcScene</option>
+            <option data-filter="Assistant">Assistant</option>
+            <option data-filter="Attribute-Assistant">Attribute-Assistant</option>
+            <option data-filter="Austin">Austin</option>
+            <option data-filter="Awareness">Awareness</option>
+            <option data-filter="Basemaps">Basemaps</option>
+            <option data-filter="Big">Big</option>
+            <option data-filter="Big-Data">Big-Data</option>
+            <option data-filter="Book">Book</option>
+            <option data-filter="Bootstrap">Bootstrap</option>
+            <option data-filter="Briefing">Briefing</option>
+            <option data-filter="Browser">Browser</option>
+            <option data-filter="Browserify">Browserify</option>
+            <option data-filter="Builder">Builder</option>
+            <option data-filter="C#">C#</option>
+            <option data-filter="CGA">CGA</option>
+            <option data-filter="COP">COP</option>
+            <option data-filter="Cadastral">Cadastral</option>
+            <option data-filter="Campus">Campus</option>
+            <option data-filter="Canvas">Canvas</option>
+            <option data-filter="Capital-Planning">Capital-Planning</option>
+            <option data-filter="Center">Center</option>
+            <option data-filter="Chain">Chain</option>
+            <option data-filter="Citizen">Citizen</option>
+            <option data-filter="CityBikes">CityBikes</option>
+            <option data-filter="CityEngine">CityEngine</option>
+            <option data-filter="Cluster">Cluster</option>
+            <option data-filter="Code">Code</option>
+            <option data-filter="Code-Challenge">Code-Challenge</option>
+            <option data-filter="Collection">Collection</option>
+            <option data-filter="Comment">Comment</option>
+            <option data-filter="Common-Operational-Picture">Common-Operational-Picture</option>
+            <option data-filter="CommonJS">CommonJS</option>
+            <option data-filter="Community">Community</option>
+            <option data-filter="CommunityParcels">CommunityParcels</option>
+            <option data-filter="Compare">Compare</option>
+            <option data-filter="Conference">Conference</option>
+            <option data-filter="Configurable">Configurable</option>
+            <option data-filter="Congress">Congress</option>
+            <option data-filter="Contents">Contents</option>
+            <option data-filter="Contest">Contest</option>
+            <option data-filter="Copy">Copy</option>
+            <option data-filter="Cordova">Cordova</option>
+            <option data-filter="Countdown">Countdown</option>
+            <option data-filter="Dashboard">Dashboard</option>
+            <option data-filter="Data">Data</option>
+            <option data-filter="Datasets">Datasets</option>
+            <option data-filter="Deed">Deed</option>
+            <option data-filter="Defense">Defense</option>
+            <option data-filter="Demo">Demo</option>
+            <option data-filter="Demographics">Demographics</option>
+            <option data-filter="Desktop">Desktop</option>
+            <option data-filter="Desktop-Addins">Desktop-Addins</option>
+            <option data-filter="Dev">Dev</option>
+            <option data-filter="Dev-Summit">Dev-Summit</option>
+            <option data-filter="DevSummit">DevSummit</option>
+            <option data-filter="Development">Development</option>
+            <option data-filter="Device">Device</option>
+            <option data-filter="Devsummit">Devsummit</option>
+            <option data-filter="Dijit">Dijit</option>
+            <option data-filter="Directions">Directions</option>
+            <option data-filter="Discovery">Discovery</option>
+            <option data-filter="Display">Display</option>
+            <option data-filter="Drafter">Drafter</option>
+            <option data-filter="DriveTime">DriveTime</option>
+            <option data-filter="Driving">Driving</option>
+            <option data-filter="Drupal">Drupal</option>
+            <option data-filter="EAF">EAF</option>
+            <option data-filter="ETL-Tools">ETL-Tools</option>
+            <option data-filter="Economic">Economic</option>
+            <option data-filter="Editing">Editing</option>
+            <option data-filter="Editor">Editor</option>
+            <option data-filter="Election">Election</option>
+            <option data-filter="Electric">Electric</option>
+            <option data-filter="Emergency">Emergency</option>
+            <option data-filter="Environment">Environment</option>
+            <option data-filter="Esri">Esri</option>
+            <option data-filter="Esri-DevSummit">Esri-DevSummit</option>
+            <option data-filter="Executive">Executive</option>
+            <option data-filter="ExpressJS">ExpressJS</option>
+            <option data-filter="Fabric">Fabric</option>
+            <option data-filter="Feature">Feature</option>
+            <option data-filter="FeatureLayer">FeatureLayer</option>
+            <option data-filter="FeatureServer">FeatureServer</option>
+            <option data-filter="FeatureService">FeatureService</option>
+            <option data-filter="FeatureServices">FeatureServices</option>
+            <option data-filter="Features">Features</option>
+            <option data-filter="Fiber-Network-Data-Management">Fiber-Network-Data-Management</option>
+            <option data-filter="Finder">Finder</option>
+            <option data-filter="Fire">Fire</option>
+            <option data-filter="Flex">Flex</option>
+            <option data-filter="Form">Form</option>
+            <option data-filter="Framework">Framework</option>
+            <option data-filter="Function">Function</option>
+            <option data-filter="GCM">GCM</option>
+            <option data-filter="GEOON">GEOON</option>
+            <option data-filter="GIS">GIS</option>
+            <option data-filter="GP">GP</option>
+            <option data-filter="GP-Tools">GP-Tools</option>
+            <option data-filter="GPS">GPS</option>
+            <option data-filter="Gallery">Gallery</option>
+            <option data-filter="Gas">Gas</option>
+            <option data-filter="Geo">Geo</option>
+            <option data-filter="GeoEvent">GeoEvent</option>
+            <option data-filter="GeoForm">GeoForm</option>
+            <option data-filter="GeoJSON">GeoJSON</option>
+            <option data-filter="GeoJson">GeoJson</option>
+            <option data-filter="GeoProcessing">GeoProcessing</option>
+            <option data-filter="GeoServices">GeoServices</option>
+            <option data-filter="GeoStore">GeoStore</option>
+            <option data-filter="Geocoder">Geocoder</option>
+            <option data-filter="Geocoding">Geocoding</option>
+            <option data-filter="Geolocation">Geolocation</option>
+            <option data-filter="Geometry">Geometry</option>
+            <option data-filter="Geoportal">Geoportal</option>
+            <option data-filter="Geoprocessing">Geoprocessing</option>
+            <option data-filter="Geotrigger">Geotrigger</option>
+            <option data-filter="Gnip">Gnip</option>
+            <option data-filter="Google">Google</option>
+            <option data-filter="Government">Government</option>
+            <option data-filter="Group">Group</option>
+            <option data-filter="HDFS">HDFS</option>
+            <option data-filter="HTML">HTML</option>
+            <option data-filter="HTML5">HTML5</option>
+            <option data-filter="Hackathon">Hackathon</option>
+            <option data-filter="Hadoop">Hadoop</option>
+            <option data-filter="Heatmap">Heatmap</option>
+            <option data-filter="Hive">Hive</option>
+            <option data-filter="Html5">Html5</option>
+            <option data-filter="Image">Image</option>
+            <option data-filter="ImageServer">ImageServer</option>
+            <option data-filter="Imagery">Imagery</option>
+            <option data-filter="Impact">Impact</option>
+            <option data-filter="Import">Import</option>
+            <option data-filter="Incident">Incident</option>
+            <option data-filter="Information">Information</option>
+            <option data-filter="Intelligence">Intelligence</option>
+            <option data-filter="JS">JS</option>
+            <option data-filter="JSAPI">JSAPI</option>
+            <option data-filter="JSON">JSON</option>
+            <option data-filter="Joint">Joint</option>
+            <option data-filter="Journal">Journal</option>
+            <option data-filter="Land">Land</option>
+            <option data-filter="Landsat">Landsat</option>
+            <option data-filter="Law">Law</option>
+            <option data-filter="Layer">Layer</option>
+            <option data-filter="LayerSwipe">LayerSwipe</option>
+            <option data-filter="Leaflet">Leaflet</option>
+            <option data-filter="Library">Library</option>
+            <option data-filter="Local">Local</option>
+            <option data-filter="Local-Government">Local-Government</option>
+            <option data-filter="LocalGovernment">LocalGovernment</option>
+            <option data-filter="Location">Location</option>
+            <option data-filter="MDCS">MDCS</option>
+            <option data-filter="MVVM">MVVM</option>
+            <option data-filter="Mac">Mac</option>
+            <option data-filter="Management">Management</option>
+            <option data-filter="Manager">Manager</option>
+            <option data-filter="Map">Map</option>
+            <option data-filter="MapJournal">MapJournal</option>
+            <option data-filter="MapKit">MapKit</option>
+            <option data-filter="MapTour">MapTour</option>
+            <option data-filter="Mapping">Mapping</option>
+            <option data-filter="Maps">Maps</option>
+            <option data-filter="Media">Media</option>
+            <option data-filter="Military">Military</option>
+            <option data-filter="Mobile">Mobile</option>
+            <option data-filter="Mosaic">Mosaic</option>
+            <option data-filter="My">My</option>
+            <option data-filter="NAD83">NAD83</option>
+            <option data-filter="NTV2">NTV2</option>
+            <option data-filter="Node">Node</option>
+            <option data-filter="Node.js">Node.js</option>
+            <option data-filter="NodeJS">NodeJS</option>
+            <option data-filter="NorthArrow">NorthArrow</option>
+            <option data-filter="Notification">Notification</option>
+            <option data-filter="NumPy">NumPy</option>
+            <option data-filter="OGC">OGC</option>
+            <option data-filter="OS">OS</option>
+            <option data-filter="Offline">Offline</option>
+            <option data-filter="On-the-fly">On-the-fly</option>
+            <option data-filter="Online">Online</option>
+            <option data-filter="Oozie">Oozie</option>
+            <option data-filter="OpenSource">OpenSource</option>
+            <option data-filter="OpenStreetMap">OpenStreetMap</option>
+            <option data-filter="PANDAS">PANDAS</option>
+            <option data-filter="Parcel">Parcel</option>
+            <option data-filter="Parcels">Parcels</option>
+            <option data-filter="Permit">Permit</option>
+            <option data-filter="Phone">Phone</option>
+            <option data-filter="PhoneGap">PhoneGap</option>
+            <option data-filter="Picture">Picture</option>
+            <option data-filter="Pizza">Pizza</option>
+            <option data-filter="Place">Place</option>
+            <option data-filter="Places">Places</option>
+            <option data-filter="Planner">Planner</option>
+            <option data-filter="Planning">Planning</option>
+            <option data-filter="Playlist">Playlist</option>
+            <option data-filter="Polling">Polling</option>
+            <option data-filter="Portal">Portal</option>
+            <option data-filter="Portal-for-ArcGIS">Portal-for-ArcGIS</option>
+            <option data-filter="Preview">Preview</option>
+            <option data-filter="Procedural">Procedural</option>
+            <option data-filter="Processing">Processing</option>
+            <option data-filter="Processor">Processor</option>
+            <option data-filter="Projections">Projections</option>
+            <option data-filter="Public">Public</option>
+            <option data-filter="Push">Push</option>
+            <option data-filter="Push-Notification">Push-Notification</option>
+            <option data-filter="Pushlet">Pushlet</option>
+            <option data-filter="PySAL">PySAL</option>
+            <option data-filter="Qt">Qt</option>
+            <option data-filter="Qualification">Qualification</option>
+            <option data-filter="QuickStart">QuickStart</option>
+            <option data-filter="R">R</option>
+            <option data-filter="REST">REST</option>
+            <option data-filter="RPK">RPK</option>
+            <option data-filter="Raster">Raster</option>
+            <option data-filter="Records">Records</option>
+            <option data-filter="Relationship">Relationship</option>
+            <option data-filter="Renderers">Renderers</option>
+            <option data-filter="Request">Request</option>
+            <option data-filter="RequireJS">RequireJS</option>
+            <option data-filter="Responsive">Responsive</option>
+            <option data-filter="Results">Results</option>
+            <option data-filter="Route">Route</option>
+            <option data-filter="Routing">Routing</option>
+            <option data-filter="Runtime">Runtime</option>
+            <option data-filter="SDK">SDK</option>
+            <option data-filter="SE">SE</option>
+            <option data-filter="SXSW">SXSW</option>
+            <option data-filter="Safety">Safety</option>
+            <option data-filter="Sample">Sample</option>
+            <option data-filter="Samples">Samples</option>
+            <option data-filter="SciPy">SciPy</option>
+            <option data-filter="Script">Script</option>
+            <option data-filter="Senate">Senate</option>
+            <option data-filter="Sencha">Sencha</option>
+            <option data-filter="SenchaTouch">SenchaTouch</option>
+            <option data-filter="Server">Server</option>
+            <option data-filter="Service">Service</option>
+            <option data-filter="ServiceArea">ServiceArea</option>
+            <option data-filter="Services">Services</option>
+            <option data-filter="Shape">Shape</option>
+            <option data-filter="Shapefile">Shapefile</option>
+            <option data-filter="Shortlist">Shortlist</option>
+            <option data-filter="Silverlight">Silverlight</option>
+            <option data-filter="Simple">Simple</option>
+            <option data-filter="Situational">Situational</option>
+            <option data-filter="Social">Social</option>
+            <option data-filter="Solutions">Solutions</option>
+            <option data-filter="Spatial">Spatial</option>
+            <option data-filter="Spatial-Index">Spatial-Index</option>
+            <option data-filter="State">State</option>
+            <option data-filter="State-Government">State-Government</option>
+            <option data-filter="Statistics">Statistics</option>
+            <option data-filter="Status">Status</option>
+            <option data-filter="Store">Store</option>
+            <option data-filter="Storytelling">Storytelling</option>
+            <option data-filter="Summit">Summit</option>
+            <option data-filter="Swipe">Swipe</option>
+            <option data-filter="Symbology">Symbology</option>
+            <option data-filter="TOC">TOC</option>
+            <option data-filter="Table">Table</option>
+            <option data-filter="Tabs">Tabs</option>
+            <option data-filter="Tax">Tax</option>
+            <option data-filter="Telcom">Telcom</option>
+            <option data-filter="Telecom">Telecom</option>
+            <option data-filter="Telecommunications">Telecommunications</option>
+            <option data-filter="Template">Template</option>
+            <option data-filter="Templates">Templates</option>
+            <option data-filter="Terraformer">Terraformer</option>
+            <option data-filter="Test">Test</option>
+            <option data-filter="Testing">Testing</option>
+            <option data-filter="Time">Time</option>
+            <option data-filter="Toolboxes">Toolboxes</option>
+            <option data-filter="Tools">Tools</option>
+            <option data-filter="Tour">Tour</option>
+            <option data-filter="Transportation">Transportation</option>
+            <option data-filter="TypeScript">TypeScript</option>
+            <option data-filter="USGS">USGS</option>
+            <option data-filter="Use">Use</option>
+            <option data-filter="User">User</option>
+            <option data-filter="Utilities">Utilities</option>
+            <option data-filter="Utility">Utility</option>
+            <option data-filter="VB">VB</option>
+            <option data-filter="Value">Value</option>
+            <option data-filter="Viewer">Viewer</option>
+            <option data-filter="Violation">Violation</option>
+            <option data-filter="Visual-Basic">Visual-Basic</option>
+            <option data-filter="Visualization">Visualization</option>
+            <option data-filter="WKT">WKT</option>
+            <option data-filter="WPF">WPF</option>
+            <option data-filter="Water">Water</option>
+            <option data-filter="Water-Utility">Water-Utility</option>
+            <option data-filter="Water-Utility-Network-Editing">Water-Utility-Network-Editing</option>
+            <option data-filter="Water-Utility-Network-Reporting">Water-Utility-Network-Reporting</option>
+            <option data-filter="Web">Web</option>
+            <option data-filter="Web-Scene">Web-Scene</option>
+            <option data-filter="Webmap">Webmap</option>
+            <option data-filter="Weighted-overlay">Weighted-overlay</option>
+            <option data-filter="Well-Known-Text">Well-Known-Text</option>
+            <option data-filter="Widget">Widget</option>
+            <option data-filter="WinPhone">WinPhone</option>
+            <option data-filter="WinRT">WinRT</option>
+            <option data-filter="WinStore">WinStore</option>
+            <option data-filter="Wind">Wind</option>
+            <option data-filter="Windows">Windows</option>
+            <option data-filter="Workflow">Workflow</option>
+            <option data-filter="X">X</option>
+            <option data-filter="XAML">XAML</option>
+            <option data-filter="admin">admin</option>
+            <option data-filter="administration">administration</option>
+            <option data-filter="analysis">analysis</option>
+            <option data-filter="and">and</option>
+            <option data-filter="application">application</option>
+            <option data-filter="boilerplate">boilerplate</option>
+            <option data-filter="c-sharp">c-sharp</option>
+            <option data-filter="comtypes">comtypes</option>
+            <option data-filter="cs">cs</option>
+            <option data-filter="ctypes">ctypes</option>
+            <option data-filter="dijit">dijit</option>
+            <option data-filter="esri-leaflet">esri-leaflet</option>
+            <option data-filter="for">for</option>
+            <option data-filter="generator">generator</option>
+            <option data-filter="iOS">iOS</option>
+            <option data-filter="iPad">iPad</option>
+            <option data-filter="iPhone">iPhone</option>
+            <option data-filter="information">information</option>
+            <option data-filter="interop">interop</option>
+            <option data-filter="jQuery">jQuery</option>
+            <option data-filter="landscape">landscape</option>
+            <option data-filter="module">module</option>
+            <option data-filter="node">node</option>
+            <option data-filter="of">of</option>
+            <option data-filter="raster">raster</option>
+            <option data-filter="script">script</option>
+            <option data-filter="silverlight">silverlight</option>
+            <option data-filter="swipe">swipe</option>
+            <option data-filter="swipemap">swipemap</option>
+            <option data-filter="template">template</option>
+            <option data-filter="tips-and-tricks">tips-and-tricks</option>
+            <option data-filter="tips-and-tricks-wpf">tips-and-tricks-wpf</option>
+            <option data-filter="toolkit">toolkit</option>
+            <option data-filter="tools">tools</option>
+            <option data-filter="transformation">transformation</option>
+            <option data-filter="widget">widget</option>
+            <option data-filter="wpf">wpf</option>
+            <option data-filter="yeoman">yeoman</option>-->
+
+        </optgroup>
+      </select>
+    </div>
+  </div>
+</div>
+
+<div class="container smaller">
+
+  <!--<div id="content">
+
+
+    <div class="repo-container element ArcGIS Runtime SDK .NET WinRT WinStore WPF WinPhone C#   XAML DotNet">
+      <div class="repo">
+        <div class="repo-header DotNet">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/esri-leaflet">  .NET サンプル </a> </h2>
+          <h3 class="repo-language DotNet"> DotNet </h3>
+        </div>
+        <p class="repo-description">
+          サンプルです。
+        </p>
+      </div>
+    </div>
+
+    <div class="repo-container element iOS Driving Directions Objective-C">
+      <div class="repo">
+        <div class="repo-header Objective-C">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/esri-leaflet">  iOS サンプル </a> </h2>
+          <h3 class="repo-language Objective-C"> Objective-C </h3>
+        </div>
+        <p class="repo-description">
+          サンプルです。
+        </p>
+    </div>
+
+    <div class="repo-container element ArcGIS Android Mobile Java">
+      <div class="repo">
+        <div class="repo-header Java">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/esri-leaflet">  Android サンプル </a> </h2>
+          <h3 class="repo-language Java"> Java </h3>
+        </div>
+        <p class="repo-description">
+          サンプルです。
+        </p>
+      </div>
+    </div>
+
+    <div class="repo-container element ArcGIS Web Mapping Leaflet JavaScript">
+      <div class="repo">
+        <div class="repo-header JavaScript">
+          <h2 class="repo-title">  <a href="https://github.com/Esri/esri-leaflet">  JavaScript サンプル </a> </h2>
+          <h3 class="repo-language JavaScript"> JavaScript </h3>
+        </div>
+        <p class="repo-description">
+          サンプルです。
+        </p>
+      </div>
+    </div>
+
+
+  </div>-->
+
+</div>
+
+
+      </div>
+    </div>
+          <footer id="footer">
+  <div class="container">
+    <div class="row">
+      <nav>
+        <h4>Arc<span>GIS</span> 開発者コミュニティ</h4>
+        <ul class="footer-list">
+          <li><a target="_brank" href="https://geonet.esri.com/groups/devcom-jp">概要</a></li>
+          <li><a target="_brank" href="https://geonet.esri.com/groups/devcom-jp/content">コンテンツ</a></li>
+          <li><a target="_brank" href="https://geonet.esri.com/groups/devcom-jp/people">参加メンバー</a></li>
+        </ul>
+      </nav>
+
+      <nav>
+        <h4>Arc<span>GIS</span> Online 開発者向けプラン</h4>
+        <ul class="footer-list">
+          <li><a target="_brank" href="http://www.esrij.com/products/arcgis-online-for-developers/">メイン</a></li>
+          <li><a target="_brank" href="http://www.esrij.com/products/arcgis-online-for-developers/details/">製品詳細</a></li>
+          <li><a target="_brank" href="http://www.esrij.com/products/arcgis-online-for-developers/faq/">FAQ</a></li>
+          <li><a target="_brank" href="http://www.esrij.com/products/arcgis-online-for-developers/documents/">ドキュメント</a></li>
+          <li><a target="_brank" href="http://developers.arcgis.com/en/sign-in">サイン イン</a></li>
+        </ul>
+      </nav>
+
+      <nav>
+        <h4>ESRIジャパン株式会社</h4>
+        <ul class="footer-list">
+          <li><a target="_brank" href="http://www.esrij.com/">ホーム</a></li>
+          <li><a target="_brank" href="http://www.esrij.com/products/developer/">製品（開発）</a></li>
+          <li><a target="_brank" href="http://www.esrij.com/about/outline/">会社概要</a></li>
+        </ul>
+      </nav>
+
+      <nav class="last">
+        <li><a target="_brank" id="esri-logo-footer" href="http://www.esrij.com/">ESRI Japan</a></li>
+        <ul id="footer-social-nav">
+          <li><a target="_brank" class="icon-twitter" href="https://twitter.com/esrijapan"></a></li>
+          <li><a target="_brank" class="icon-facebook" href="https://www.facebook.com/esrigis"></a></li>
+          <li><a target="_brank" class="icon-github" href="http://github.com/Esri"></a></li>
+          <!--<li><a target="_brank" class="icon-email" href="https://esrij.smartseminar.jp/public/application/add/356"></a></li>-->
+        </ul>
+      </nav>
+      <small id="footer-legal">&copy; Copyright 2002-2015 Esri Japan Corporation. <!--| <a href="http://www.esri.com/legal/privacy">Privacy</a> | <a href="http://www.esri.com/legal/software-license">Legal</a>--></small>
+    </div>
+
+  </div>
+</footer>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-39596060-4', 'auto');
+      ga('send', 'pageview');
+    </script>
 
   </body>
 
