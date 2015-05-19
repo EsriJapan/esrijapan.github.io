@@ -4,16 +4,19 @@ $(function () {
 	var ios_repo_class = 'repo-container element ArcGIS Runtime iOS Mobile Objective-C';
 	var android_repo_class = 'repo-container element ArcGIS Runtime Android Mobile Java';
 	var js_repo_class = 'repo-container element ArcGIS Web Mapping JavaScript';
+	var python_repo_class = 'repo-container element ArcGIS GIS Python';
 
 	var dotnet_header_class = 'repo-header DotNet';
 	var ios_header_class = 'repo-header Objective-C';
 	var android_header_class = 'repo-header Java';
 	var js_header_class = 'repo-header JavaScript';
+	var python_header_class = 'repo-header Python';
 
 	var dotnet_h3_class = 'repo-language DotNet';
 	var ios_h3_class = 'repo-language Objective-C';
 	var android_h3_class = 'repo-language Java';
 	var js_h3_class = 'repo-language JavaScript';
+	var python_h3_class = 'repo-language Python';
 
 	var language;
 
@@ -51,7 +54,7 @@ $(function () {
 	        	}
 
 	        	// リポジトリの言語
-	        	if(repos[i].language == 'C#' || repos[i].language == 'Objective-C' || repos[i].language == 'Java' || repos[i].language == 'JavaScript' || repos[i].language == 'HTML') {
+	        	if(repos[i].language == 'C#' || repos[i].language == 'Objective-C' || repos[i].language == 'Java' || repos[i].language == 'JavaScript' || repos[i].language == 'HTML' || repos[i].language == 'Python') {
 	        		console.log(repos[i]);
 	        		var repo_class;
 		        	var header_class;
@@ -89,6 +92,12 @@ $(function () {
 					    header_class = js_header_class;
 					    h3_class = js_h3_class;
 					    language = 'JavaScript';
+					    break;
+					  case 'Python':
+					    repo_class = python_repo_class;
+					    header_class = python_header_class;
+					    h3_class = python_h3_class;
+					    language = 'Python';
 					    break;
 					}
 					// フィルタリング用のクラスを追加
