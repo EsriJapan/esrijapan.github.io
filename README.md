@@ -1,6 +1,7 @@
 # esrijapan.github.io
 
 ESRIジャパンあるいは Esri が公開しているオープンソース プロジェクトのランディング ページです。
+[![](img/readme/ej_github.png)]()
 
 ## ライセンス
 Copyright 2015 Esri Japan Corporation.
