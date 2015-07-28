@@ -28,6 +28,20 @@ $(function () {
 
 	var data_filter = [];
 
+	var urlParams;
+	function get_url_vars() {
+	  var vars = new Object, params;
+	  var temp_params = window.location.search.substring(1).split('&');
+	  for(var i = 0; i <temp_params.length; i++) {
+	    params = temp_params[i].split('=');
+	    vars[params[0]] = params[1];
+	  }
+		console.log(vars);
+	  return vars;
+	}
+	urlParams = get_url_vars();
+	console.log(urlParams["esrij"]);
+
 	// リポジトリの取得
     $.get('https://api.github.com/users/EsriJapan/repos').then(function (repos) {
     	console.log(repos);
@@ -121,15 +135,31 @@ $(function () {
 			        var repo_language_h3 = $('<h3/>').addClass(h3_class).text(language);
 			        var repo_description = $('<p/>').addClass('repo-description').text(repos[i].description);
 
-			        repo_title_h2.append(repo_link_a);
-			        repo_header_div.append(repo_title_h2);
-			        repo_header_div.append(repo_language_h3);
-			        repo_div.append(repo_header_div);
-			        repo_div.append(repo_description);
-			        repo_container_div.append(repo_div);
+							if(urlParams["esrij"] === "yes") {
+								// スターとFork数
+								var repo_fork = $('<span/>').addClass('icon-fork').text(" " + repos[i].forks_count + " ");
+								var repo_star = $('<span/>').addClass('icon-star').text(" " + repos[i].stargazers_count + " ");
+								var repo_stats = $('<p/>').addClass('stats');
+								repo_stats.append(repo_fork);
+								repo_stats.append(repo_star);
+							}
 
-			        content_div.append(repo_container_div);
-			        //console.log($('div#content.isotope'));
+				        repo_title_h2.append(repo_link_a);
+				        repo_header_div.append(repo_title_h2);
+				        repo_header_div.append(repo_language_h3);
+				        repo_div.append(repo_header_div);
+				        repo_div.append(repo_description);
+
+							if(urlParams["esrij"] === "yes") {
+				        // スターとFork数
+				        repo_div.append(repo_stats);
+							}
+
+							repo_container_div.append(repo_div);
+
+				        content_div.append(repo_container_div);
+				        //console.log($('div#content.isotope'));
+
 	        	}
 
 	        }
