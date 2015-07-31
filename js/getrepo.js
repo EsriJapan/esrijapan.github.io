@@ -46,6 +46,17 @@ $(function () {
     $.get('https://api.github.com/users/EsriJapan/repos').then(function (repos) {
     	console.log(repos);
 
+			// リポジトリのソート（スター数×2 + フォーク数）
+			repos.sort(function(a, b) {
+				a = a.stargazers_count*2 + a.forks_count;
+				b = b.stargazers_count*2 + b.forks_count;
+				if(a < b)
+					return 1;
+				if(a > b)
+					return -1;
+				return 0;
+			});
+
     	// ループ（リポジトリ配列）
         for (var i = 0; i < repos.length; i++) {
         	// リポジトリ名⇒フィルタリング用のクラスを作成⇒配列
