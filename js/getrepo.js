@@ -28,7 +28,7 @@ $(function () {
 
 	var data_filter = [];
 
-	var urlParams;
+	/*var urlParams;
 	function get_url_vars() {
 	  var vars = new Object, params;
 	  var temp_params = window.location.search.substring(1).split('&');
@@ -40,7 +40,7 @@ $(function () {
 	  return vars;
 	}
 	urlParams = get_url_vars();
-	console.log(urlParams["esrij"]);
+	console.log(urlParams["esrij"]);*/
 
 	// リポジトリの取得
     $.get('https://api.github.com/users/EsriJapan/repos').then(function (repos) {
@@ -146,14 +146,14 @@ $(function () {
 			        var repo_language_h3 = $('<h3/>').addClass(h3_class).text(language);
 			        var repo_description = $('<p/>').addClass('repo-description').text(repos[i].description);
 
-							if(urlParams["esrij"] === "yes") {
-								// スターとFork数
-								var repo_fork = $('<span/>').addClass('icon-fork').text(" " + repos[i].forks_count + " ");
-								var repo_star = $('<span/>').addClass('icon-star').text(" " + repos[i].stargazers_count + " ");
-								var repo_stats = $('<p/>').addClass('stats');
-								repo_stats.append(repo_fork);
-								repo_stats.append(repo_star);
-							}
+						//if(urlParams["esrij"] === "yes") {
+							// スターとFork数
+							var repo_fork = $('<span/>').addClass('icon-fork').text(" " + repos[i].forks_count + " ");
+							var repo_star = $('<span/>').addClass('icon-star').text(" " + repos[i].stargazers_count + " ");
+							var repo_stats = $('<p/>').addClass('stats');
+							repo_stats.append(repo_fork);
+							repo_stats.append(repo_star);
+						//}
 
 				        repo_title_h2.append(repo_link_a);
 				        repo_header_div.append(repo_title_h2);
@@ -161,12 +161,12 @@ $(function () {
 				        repo_div.append(repo_header_div);
 				        repo_div.append(repo_description);
 
-							if(urlParams["esrij"] === "yes") {
-				        // スターとFork数
-				        repo_div.append(repo_stats);
-							}
+						//if(urlParams["esrij"] === "yes") {
+					        // スターとFork数
+					        repo_div.append(repo_stats);
+						//}
 
-							repo_container_div.append(repo_div);
+						repo_container_div.append(repo_div);
 
 				        content_div.append(repo_container_div);
 				        //console.log($('div#content.isotope'));
