@@ -4,7 +4,7 @@ ESRIジャパンあるいは Esri が公開しているオープンソース プ
 [![](img/readme/ej_github.png)]()
 
 ## ライセンス
-Copyright 2015 Esri Japan Corporation.
+Copyright 2021 Esri Japan Corporation.
 
 Apache License Version 2.0（「本ライセンス」）に基づいてライセンスされます。あなたがこのファイルを使用するためには、本ライセンスに従わなければなりません。本ライセンスのコピーは下記の場所から入手できます。
 
